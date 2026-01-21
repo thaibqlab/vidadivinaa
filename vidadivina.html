@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đang chuyển hướng...</title>
+  <script>
+    // ====== CẤU HÌNH DELAY NGẪU NHIÊN (ms) ======
+    const MIN_DELAY = 5000; // 30 giây
+    const MAX_DELAY = 10000; // 90 giây
+
+    const productLinks = [
+"https://vdal.vidadivina.com/shop-now",
+"http://myss.vidadivina.com/shop-now",
+"https://hroberto1234.vidadivina.com/shop-now",
+"https://diegoherediac.vidadivina.com/shop-now",
+"https://desingbusiness.vidadivina.com/shop-now",
+"https://valdivia16.vidadivina.com/shop-now",
+"https://convencete.vidadivina.com/shop-now",
+"https://bellasaludable.vidadivina.com/shop-now",
+"https://vafam.vidadivina.com/shop-now",
+"https://vanedomm.vidadivina.com/shop-now",
+"https://sancy.vidadivina.com/shop-now",
+"https://tiendaglobal.vidadivina.com/shop-now",
+"https://soy.vidadivina.com/shop-now",
+"https://davilla.vidadivina.com/shop-now",
+"https://adelfa.vidadivina.com/shop-now",
+"https://yourgirltasha.vidadivina.com/shop-now",
+"https://nellycervantes.vidadivina.com/shop-now",
+"https://priscilag.vidadivina.com/shop-now",
+"https://vidadivina.com/shop-now",
+"https://healthwellnessmart.vidadivina.com/shop-now",
+"https://paolafarias.vidadivina.com/shop-now",
+"https://lucyhenriquez.vidadivina.com/shop-now",
+"https://lupitamurillo.vidadivina.com/shop-now",
+"https://patriciarugeriom.vidadivina.com/shop-now",
+"https://angelmcaballero.vidadivina.com/shop-now",
+"https://vfairy.vidadivina.com/shop-now",
+"https://vianeyrogel2020.vidadivina.com/shop-now",
+"https://zafraado.vidadivina.com/shop-now",
+"https://denisehealthylife.vidadivina.com/shop-now",
+"https://kimwill.vidadivina.com/shop-now",
+"https://linton.vidadivina.com/shop-now",
+"https://merymar.vidadivina.com/shop-now",
+"https://msbmorehealthy.vidadivina.com/shop-now",
+"https://navamaria.vidadivina.com/shop-now",
+"https://nutrinet.vidadivina.com/shop-now",
+"https://oscarrr.vidadivina.com/shop-now",
+"https://aboutabean.vidadivina.com/shop-now",
+"https://azulgrecia.vidadivina.com/shop-now",
+"https://unetea.vidadivina.com/shop-now",
+"https://yanizvane.vidadivina.com/shop-now",
+"https://detoxconjaime.vidadivina.com/shop-now",
+"https://dhackney.vidadivina.com/shop-now",
+"https://jazzsalud.vidadivina.com/shop-now",
+"https://douka.vidadivina.com/shop-now",
+"https://ff.vidadivina.com/shop-now",
+"https://amars68.vidadivina.com/shop-now",
+"https://dbbusinessgroup.vidadivina.com/shop-now",
+"https://durazo.vidadivina.com/shop-now",
+"https://emmanuelmedina44.vidadivina.com/shop-now",
+"https://garsumy.vidadivina.com/shop-now",
+"https://jaime1.vidadivina.com/shop-now",
+"https://meeckusmiracle.vidadivina.com/shop-now",
+"https://ninamj2002.vidadivina.com/shop-now",
+"https://anauchatoma.vidadivina.com/shop-now",
+"https://teecole.vidadivina.com/shop-now",
+"https://candy425.vidadivina.com/shop-now",
+"https://yohe.vidadivina.com/shop-now",
+"https://ceilaiken4life.vidadivina.com/shop-now",
+"https://detoxtedivina.vidadivina.com/shop-now",
+"https://drinkthatea.vidadivina.com/shop-now",
+"https://grabtaffytea.vidadivina.com/shop-now",
+"https://joinvidadivina.vidadivina.com/shop-now",
+"https://joseluis.vidadivina.com/shop-now",
+"https://jrglobal.vidadivina.com/shop-now",
+"https://livefreewithp.vidadivina.com/shop-now",
+"https://melcare.vidadivina.com/shop-now",
+"https://naomigd.vidadivina.com/shop-now",
+"https://nelsygonzales.vidadivina.com/shop-now"
+];
+
+    // Random delay
+    const delay =
+      Math.floor(Math.random() * (MAX_DELAY - MIN_DELAY + 1)) + MIN_DELAY;
+
+    // Random link
+    const randomIndex = Math.floor(Math.random() * productLinks.length);
+    const targetLink = productLinks[randomIndex];
+
+    // Redirect sau delay
+    setTimeout(() => {
+      window.location.href = targetLink;
+    }, delay);
+
+    // Hiển thị thời gian chờ
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("delay").innerText =
+        Math.round(delay / 1000) + " giây";
+    });
+  </script>
+</head>
+<body>
+  <p>⏳ Vui lòng đợi <strong id="delay"></strong> trước khi chuyển đến Bravenly...</p>
+</body>
+</html>
